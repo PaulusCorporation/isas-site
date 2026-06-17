@@ -1,0 +1,17 @@
+{
+  "name": "ISAS — Instituto Social Assistência à Saúde",
+  "short_name": "ISAS",
+  "description": "Instituto Social Assistência à Saúde — atendimento humanizado para toda a comunidade.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0D2247",
+  "theme_color": "#1B3A6B",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

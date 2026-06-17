@@ -3,8 +3,78 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="ISAS — Instituto Social Assistência à Saúde. Cuidando de vidas com compaixão e excelência.">
+
+  <!-- SEO primário -->
   <title>ISAS — Instituto Social Assistência à Saúde</title>
+  <meta name="description" content="ISAS — Instituto Social Assistência à Saúde. Atendimento humanizado e de qualidade para toda a comunidade, independentemente de condição social.">
+  <meta name="keywords" content="ISAS, Instituto Social Assistência à Saúde, hospital filantrópico, saúde, SUS, Paraíba">
+  <meta name="author" content="ISAS — Instituto Social Assistência à Saúde">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://pauluscorporation.github.io/isas-site/">
+
+  <!-- Open Graph — preview ao compartilhar no WhatsApp, Facebook, etc. -->
+  <meta property="og:type"        content="website">
+  <meta property="og:url"         content="https://pauluscorporation.github.io/isas-site/">
+  <meta property="og:title"       content="ISAS — Instituto Social Assistência à Saúde">
+  <meta property="og:description" content="Atendimento humanizado e de qualidade para toda a comunidade, independentemente de condição social.">
+  <meta property="og:locale"      content="pt_BR">
+  <meta property="og:site_name"   content="ISAS">
+
+  <!-- Twitter / X Card -->
+  <meta name="twitter:card"        content="summary">
+  <meta name="twitter:title"       content="ISAS — Instituto Social Assistência à Saúde">
+  <meta name="twitter:description" content="Atendimento humanizado e de qualidade para toda a comunidade.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="apple-touch-icon"          href="favicon.svg">
+
+  <!-- PWA — instalar como app no celular -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#1B3A6B">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="ISAS">
+
+  <!-- Schema.org — Google identifica como hospital/organização de saúde -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalOrganization",
+    "name": "ISAS — Instituto Social Assistência à Saúde",
+    "alternateName": "ISAS",
+    "description": "Instituto Social Assistência à Saúde — entidade filantrópica comprometida com o atendimento humanizado e de qualidade para toda a comunidade.",
+    "url": "https://pauluscorporation.github.io/isas-site/",
+    "logo": "https://pauluscorporation.github.io/isas-site/favicon.svg",
+    "telephone": "+55-83-3000-0000",
+    "email": "contato@isas.org.br",
+    "address": {
+      "@type": "PostalAddress",
+      "addressRegion": "PB",
+      "addressCountry": "BR"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+        "opens": "07:00",
+        "closes": "18:00"
+      }
+    ],
+    "medicalSpecialty": [
+      "Cardiology",
+      "Pediatrics",
+      "Orthopedic",
+      "Oncology"
+    ],
+    "availableService": {
+      "@type": "MedicalTherapy",
+      "name": "Pronto Atendimento 24h"
+    }
+  }
+  </script>
+
+  <!-- Fontes -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -52,21 +122,21 @@
     <div class="container hero__content">
       <span class="badge badge--light">
         <i class="fa-solid fa-certificate" aria-hidden="true"></i>
-        Certificado CEBAS · Entidade Filantrópica
+        Entidade Filantrópica · Certificada CEBAS
       </span>
       <h1 class="hero__title">
-        Cuidando de Vidas<br>com <em>Compaixão</em><br>e <em>Excelência</em>
+        Saúde é um<br>direito de <em>todos.</em><br>Nós acreditamos nisso.
       </h1>
       <p class="hero__sub">
-        Oferecemos atendimento humanizado e de alta qualidade para toda a comunidade,
-        independentemente de condição social. Saúde é um direito de todos.
+        O ISAS oferece atendimento humanizado e de alta qualidade para toda a comunidade,
+        independentemente de condição social. Porque cuidar de pessoas é a nossa missão.
       </p>
       <div class="hero__cta">
         <a href="#servicos" class="btn btn--gold">
           <i class="fa-solid fa-stethoscope" aria-hidden="true"></i> Nossos Serviços
         </a>
         <a href="#sobre" class="btn btn--outline-white">
-          <i class="fa-solid fa-circle-info" aria-hidden="true"></i> Nossa História
+          <i class="fa-solid fa-circle-info" aria-hidden="true"></i> Nossa Missão
         </a>
       </div>
     </div>
@@ -79,10 +149,10 @@
   <section class="stats" id="stats">
     <div class="container stats__grid">
       <div class="stat" data-aos>
-        <div class="stat__icon"><i class="fa-solid fa-calendar-heart"></i></div>
+        <div class="stat__icon"><i class="fa-solid fa-heart-circle-check"></i></div>
         <div class="stat__body">
-          <p class="stat__num"><span class="counter" data-target="50">0</span>+</p>
-          <p class="stat__label">Anos de História</p>
+          <p class="stat__num">100%</p>
+          <p class="stat__label">Compromisso Social</p>
         </div>
       </div>
       <div class="stat" data-aos>
@@ -125,27 +195,27 @@
           <i class="fa-solid fa-award"></i>
           <div>
             <strong>Certificação CEBAS Saúde</strong>
-            <span>Renovada em 2024</span>
+            <span>Entidade Filantrópica Certificada</span>
           </div>
         </div>
         <div class="sobre__anos">
-          <strong>+50</strong>
-          <span>Anos de dedicação</span>
+          <strong>SUS</strong>
+          <span>Atendimento gratuito</span>
         </div>
       </div>
 
       <div class="sobre__content">
         <span class="section-tag">Quem Somos</span>
-        <h2 class="section-title">Instituto Social Assistência à Saúde</h2>
+        <h2 class="section-title">Saúde com dignidade para quem mais precisa</h2>
         <p class="sobre__lead">
-          O ISAS — Instituto Social Assistência à Saúde — é uma instituição comprometida com
-          a missão de oferecer saúde digna e humanizada a toda a população, independentemente
-          de condição social.
+          O ISAS — Instituto Social Assistência à Saúde — nasceu do compromisso de transformar
+          vidas por meio de um atendimento médico humanizado, acessível e de excelência para
+          toda a comunidade.
         </p>
         <p>
-          <!-- A ser preenchido com informações institucionais reais -->
-          Como entidade filantrópica, trabalhamos para garantir acesso universal à saúde de qualidade
-          para quem mais precisa.
+          Como entidade filantrópica certificada pelo CEBAS, garantimos que cada pessoa,
+          independentemente de condição social, tenha acesso a saúde de qualidade com
+          respeito e dignidade.
         </p>
 
         <ul class="check-list">
@@ -440,7 +510,7 @@
 
     <div class="footer__bottom">
       <div class="container footer__bottom-inner">
-        <p>&copy; 2026 ISAS — Instituto Social Assistência à Saúde. Todos os direitos reservados.</p>
+        <p>&copy; <span id="anoAtual"></span> ISAS — Instituto Social Assistência à Saúde. Todos os direitos reservados.</p>
         <p>CNPJ: 00.000.000/0001-00 &nbsp;|&nbsp; Entidade Filantrópica</p>
       </div>
     </div>

@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm --version)",
+      "Bash(git --version)",
+      "Bash(gh --version)",
+      "Bash(git init *)",
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(git remote *)",
+      "Bash(git branch *)",
+      "Bash(git push *)",
+      "Bash(curl -sS https://webi.sh/gh)",
+      "Bash(sh)",
+      "Bash(~/.local/bin/gh auth *)",
+      "Bash(~/.local/share/webi/bin/gh auth *)",
+      "Read(//home/paulorenatodeoliveiraholanda/.local/**)",
+      "Bash(cat ~/.config/gh/hosts.yml 2>/dev/null || echo \"sem auth salvo\")",
+      "Read(//home/paulorenatodeoliveiraholanda/.config/gh/**)"
+    ]
+  }
+}

@@ -191,6 +191,10 @@
     }
   });
 
+  // ── Ano dinâmico no footer ───────────────────
+  const anoEl = document.getElementById('anoAtual');
+  if (anoEl) anoEl.textContent = new Date().getFullYear();
+
   // ── Init ─────────────────────────────────────
   onScroll();
 })();
