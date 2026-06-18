@@ -144,10 +144,15 @@
       };
 
       try {
-        const res = await fetch('http://localhost:8080/api/contatos', {
+        const res = await fetch('https://hkbmtsvuhmkfmxcllhqg.supabase.co/rest/v1/contatos', {
           method:  'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body:    JSON.stringify(payload),
+          headers: {
+            'Content-Type':  'application/json',
+            'apikey':        'sb_publishable_qUK1bc-fwdd-1aZtq3p7cg_9C_bBXYU',
+            'Authorization': 'Bearer sb_publishable_qUK1bc-fwdd-1aZtq3p7cg_9C_bBXYU',
+            'Prefer':        'return=minimal',
+          },
+          body: JSON.stringify(payload),
         });
 
         if (res.ok) {
