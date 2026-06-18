@@ -121,7 +121,7 @@
 
   // ── Formulário de contato ────────────────────
   if (form) {
-    form.addEventListener('submit', (e) => {
+    form.addEventListener('submit', async (e) => {
       e.preventDefault();
 
       if (!form.checkValidity()) {
@@ -135,13 +135,33 @@
       submitBtn.disabled = true;
       submitBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Enviando...';
 
-      // Simula envio (substitua por fetch real para seu backend)
-      setTimeout(() => {
-        form.hidden = true;
-        formSuccess.hidden = false;
+      const payload = {
+        nome:     form.nome.value,
+        email:    form.email.value,
+        telefone: form.telefone.value,
+        assunto:  form.assunto.value,
+        mensagem: form.mensagem.value,
+      };
+
+      try {
+        const res = await fetch('http://localhost:8080/api/contatos', {
+          method:  'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body:    JSON.stringify(payload),
+        });
+
+        if (res.ok) {
+          form.hidden = true;
+          formSuccess.hidden = false;
+        } else {
+          alert('Erro ao enviar mensagem. Tente novamente.');
+        }
+      } catch (err) {
+        alert('Não foi possível conectar ao servidor. Verifique se a API está rodando.');
+      } finally {
         submitBtn.disabled = false;
         submitBtn.innerHTML = original;
-      }, 1400);
+      }
     });
   }
 
