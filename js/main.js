@@ -148,8 +148,8 @@
           method:  'POST',
           headers: {
             'Content-Type':  'application/json',
-            'apikey':        'sb_publishable_qUK1bc-fwdd-1aZtq3p7cg_9C_bBXYU',
-            'Authorization': 'Bearer sb_publishable_qUK1bc-fwdd-1aZtq3p7cg_9C_bBXYU',
+            'apikey':        'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhrYm10c3Z1aG1rZm14Y2xsaHFnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODE3ODg5MzYsImV4cCI6MjA5NzM2NDkzNn0.9K9AYf4pfeSirE385gx7QvWyn3ayEA_KmI_HX-opZHQ',
+            'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhrYm10c3Z1aG1rZm14Y2xsaHFnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODE3ODg5MzYsImV4cCI6MjA5NzM2NDkzNn0.9K9AYf4pfeSirE385gx7QvWyn3ayEA_KmI_HX-opZHQ',
             'Prefer':        'return=minimal',
           },
           body: JSON.stringify(payload),
